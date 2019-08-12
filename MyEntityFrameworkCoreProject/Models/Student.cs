@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace MyEntityFrameworkCoreProject.Models {
-    class Student {
+    public class Student {
 
         public int Id { get; set; }
         //[Required]
@@ -15,6 +15,9 @@ namespace MyEntityFrameworkCoreProject.Models {
         public int SAT { get; set; }
         public double GPA { get; set; }
         public bool IsFulltime { get; set; }
+
+        public Student() {
+        }
 
     }
 }
